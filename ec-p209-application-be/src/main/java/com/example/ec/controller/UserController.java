@@ -16,10 +16,10 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-//    @GetMapping("/getall")
-//    private List<User> getall() {
-//        return userService.getAll();
-//    }
+    @GetMapping("/test")
+    private void getall() {
+        System.out.println("get all");
+    }
 
     @PostMapping("/login")
     private Map<String, Object> userLogin(@RequestBody Map<String, Object> user) {
