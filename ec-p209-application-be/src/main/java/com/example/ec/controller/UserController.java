@@ -17,8 +17,8 @@ public class UserController {
     private UserService userService;
 
     @GetMapping("/test")
-    private void getall() {
-        System.out.println("get all");
+    private String getall() {
+        return "SUCCESS!!!";
     }
 
     @PostMapping("/login")
