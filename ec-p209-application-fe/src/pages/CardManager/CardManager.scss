@@ -1,0 +1,212 @@
+.cardmanager-main {
+  .cardview {
+    .container {
+      .cardview-func {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+
+        .tablinks {
+          width: 30%;
+          border: none;
+          border-radius: 20px;
+          background-color: #ffa95a;
+          opacity: 0.8;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          outline: none;
+          cursor: pointer;
+          height: 200px;
+          box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
+
+          &:hover {
+            opacity: 1;
+          }
+
+          &.active {
+            background-color: #ff881a;
+          }
+
+          .card-icon {
+            font-size: 50px;
+          }
+
+          .card-type {
+            margin: 0;
+            font-size: 30px;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .cardview-content {
+        .tabcontent {
+          margin-bottom: 50px;
+
+          .register-link {
+            color: #FF7A00;
+            display: block;
+            text-align: center;
+            font-size: 30px;
+            margin: 70px auto;
+            font-weight: 600;
+          }
+
+          .card-info {
+            background-color: #fbdabb;
+            border-radius: 20px;
+            padding: 30px 70px;
+  
+            .cardinfo-above {
+              display: flex;
+              align-items: center;
+  
+              .card {
+                height: 200px;
+                margin: 0;
+              }
+  
+              .card-text {
+                margin-left: 40px;
+  
+                .card-high {
+                  margin: 5px 0;
+                  font-size: 24px;
+                  font-weight: 600;
+  
+                  &.name {
+                    text-transform: uppercase;
+                  }
+                }
+  
+                .card-normal {
+                  margin: 5px 0;
+                  font-size: 20px;
+                }
+              }
+            }
+  
+            .cardinfo-below {
+              background-color: #ffc997;
+              border-radius: 20px;
+              padding: 30px 50px;
+              margin-top: 30px;
+              height: fit-content;
+  
+              .cardinfo-header {
+                font-weight: 600;
+                margin: 5px 0 10px;
+                font-size: 24px;
+              }
+  
+              .cardinfo-inner {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+  
+                .cardinfo-text {
+                  margin: 3px 0;
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+      //   .tabcontent {
+      //     display: none;
+      //     padding: 6px 12px;
+      //     background: linear-gradient(#929d66 50px, #c5cb82 50px);
+      //     box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
+      //     border-radius: 30px;
+
+      //     .tabcontent-header {
+      //       padding: 5px 40px;
+      //       display: flex;
+      //       justify-content: space-between;
+
+      //       .card-type {
+      //         margin: 0;
+      //         color: #fff;
+      //         font-size: 20px;
+      //         font-weight: 600;
+      //       }
+
+      //       .register-link {
+      //         text-decoration: none;
+      //         font-size: 20px;
+      //         color: #00fff0;
+      //         font-weight: 600;
+      //         opacity: 0.8;
+
+      //         &:hover {
+      //           opacity: 1;
+      //         }
+      //       }
+      //     }
+
+      //     .tabcontent-body {
+      //       padding: 10px 40px 0;
+
+      //       .card-container {
+      //         display: flex;
+      //         justify-content: space-between;
+      //         background-color: #d6ddc0;
+      //         margin: 10px auto;
+      //         border-radius: 10px;
+      //         padding: 15px 20px;
+
+      //         .card-inner {
+      //           display: flex;
+
+      //           .card {
+      //             height: 100px;
+      //             margin: 0 10px;
+      //           }
+
+      //           .cardinfo {
+      //             display: flex;
+      //             flex-direction: column;
+      //             justify-content: center;
+
+      //             .cardinfo-text {
+      //               font-size: 22px;
+      //               font-weight: 600;
+      //               margin: 0;
+      //               text-transform: uppercase;
+      //             }
+      //           }
+      //         }
+
+      //         .card-status {
+      //           color: #289801;
+      //           margin: auto 0;
+      //           font-size: 24px;
+      //           font-weight: 600;
+
+      //           &.locked {
+      //             color: #980101;
+      //           }
+      //         }
+
+      //         .card-link {
+      //           margin: auto 0;
+
+      //           .arrow {
+      //             font-size: 50px;
+      //             color: #000;
+
+      //             &:hover {
+      //               font-size: 60px;
+      //             }
+      //           }
+      //         }
+      //       }
+      //     }
+      //   }
+      // }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.payment-main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url("../../assets/images/logregbg.jpg");
+  background-size: cover;
+
+  .loader {
+    position: fixed;
+    top: 45vh;
+    left: 45vw;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .logo {
+    height: 80px;
+    margin: -200px auto 100px;
+  }
+
+  .container {
+
+    .payment-form {
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      padding: 20px 40px;
+      border-radius: 20px;
+      box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
+
+      .alert {
+        font-size: 16px;
+        color: red;
+        margin-top: -5px;
+      }
+
+      .payment-header {
+        font-weight: 600;
+        margin: 10px 0;
+        font-size: 24px;
+        text-align: center;
+      }
+
+      .type-title {
+        margin: 0;
+        font-weight: 600;
+      }
+
+      .type-label {
+        width: fit-content;
+        display: inline-block;
+      }
+
+      .payment-input {
+        height: 25px;
+        padding: 5px 10px;
+        margin: 10px 0;
+        border: none;
+        background: linear-gradient(
+          270deg,
+          rgba(255, 218, 124, 0.3) 0%,
+          #ffda7c 88.02%
+        );
+        border-radius: 5px;
+        outline: none;
+        opacity: 0.8;
+
+        &:focus {
+          opacity: 1;
+        }
+      }
+
+      .payment-button {
+        width: 150px;
+        margin: 20px auto 10px;
+        opacity: 0.8;
+        cursor: pointer;
+        padding: 10px 20px;
+        color: #fff;
+        background-color: #fc6868;
+        border-radius: 5px;
+        border: none;
+        font-weight: 600;
+        font-size: 16px;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

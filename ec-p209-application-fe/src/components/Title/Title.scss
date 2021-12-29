@@ -1,0 +1,26 @@
+.title-wrap {
+    .container {
+        .title-link {
+            text-decoration: none;
+            font-size: 32px;
+            color: #000;
+            font-weight: 600;
+            opacity: 0.8;
+        
+            &:hover {
+                opacity: 1;
+            }
+        
+            .arrow {
+                margin-right: 10px;
+            }
+        }
+        
+        .title-line {
+            background-color: #4A4A4A;
+            border: none;
+            height: 2px;
+            margin-bottom: 40px;
+        }
+    }
+}

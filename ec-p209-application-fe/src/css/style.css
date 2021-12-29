@@ -1,0 +1,883 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+
+html ::-webkit-scrollbar {
+  width: 5px;
+}
+html ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px lightgrey;
+          box-shadow: inset 0 0 5px lightgrey;
+  border-radius: 10px;
+}
+html ::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+html ::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  margin: 0;
+}
+body #root {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body #root .container {
+  max-width: 1140px;
+  padding: 0px 50px;
+  margin: 0px auto;
+}
+body #root .container .redirect-link {
+  text-decoration: none;
+  font-size: 32px;
+  color: #000;
+  font-weight: 600;
+  opacity: 0.8;
+}
+body #root .container .redirect-link:hover {
+  opacity: 1;
+}
+body #root .container .redirect-link .arrow {
+  margin-right: 10px;
+}
+body #root .container .link-line {
+  background-color: #4A4A4A;
+  border: none;
+  height: 2px;
+  margin-bottom: 40px;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+body .header .nav {
+  background-color: #FFC806;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+body .header .nav .container .nav-inner {
+  padding: 8px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .header .nav .container .nav-inner .logo {
+  height: 40px;
+  margin: 0;
+}
+body .header .nav .container .nav-inner .login {
+  border: none;
+  color: #000;
+  text-decoration: none;
+  background: #fff;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 100px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  cursor: pointer;
+  -webkit-box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
+          box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
+  opacity: 0.9;
+}
+body .header .nav .container .nav-inner .login:hover {
+  opacity: 1;
+}
+body .header .nav .container .nav-inner .login .login-icon {
+  font-size: 24px;
+}
+body .header .nav .container .nav-inner .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .header .nav .container .nav-inner .user .user-text {
+  margin: 0;
+  font-weight: 600;
+  color: #646464;
+  text-align: right;
+}
+body .header .nav .container .nav-inner .user .user-name {
+  margin: 0;
+  color: #000;
+  text-align: right;
+  font-size: 22px;
+  font-weight: 600;
+}
+body .header .nav .container .nav-inner .user .user-inner {
+  margin-right: 10px;
+  line-height: 1;
+}
+body .header .nav .container .nav-inner .user .logout-icon {
+  font-size: 45px;
+  color: #FF3D00;
+  opacity: 0.8;
+  cursor: pointer;
+}
+body .header .nav .container .nav-inner .user .logout-icon:hover {
+  opacity: 1;
+}
+
+body .footer .footer-inner {
+  background-color: #FFC806;
+}
+body .footer .footer-inner .container .sp-cpr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body .footer .footer-inner .container .sp-cpr .sp-cpr-text {
+  margin: 0;
+  padding: 20px 0;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+body .index-main .banner {
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+body .index-main .main-inner {
+  margin-top: 600px;
+  padding: 0 0 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fee694), to(#FCFCFC));
+  background: linear-gradient(#fee694, #FCFCFC);
+}
+body .index-main .main-inner .fav .container .fav-inner {
+  position: relative;
+  top: -105px;
+  border: none;
+  border-radius: 20px;
+  background-color: #fff;
+  -webkit-box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
+          box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
+  padding: 20px 50px;
+}
+body .index-main .main-inner .fav .container .fav-inner .discription {
+  margin: 20px auto;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 23px;
+  font-weight: 600;
+  border: 1px solid #878787;
+  border-color: #878787 transparent #878787 transparent;
+}
+body .index-main .main-inner .func .container .func-line {
+  height: 3px;
+  background-color: #FF5C00;
+  border: none;
+  margin: 30px auto;
+}
+body .index-main .main-inner .func .container .func-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .index-main .main-inner .func .container .func-inner .card {
+  margin: 0;
+  width: 350px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+body .index-main .main-inner .func .container .func-inner .card img {
+  -webkit-box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
+          box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+body .index-main .main-inner .func .container .func-inner .card-info {
+  margin: auto 30px;
+}
+body .index-main .main-inner .func .container .func-inner .card-info .card-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 auto 10px;
+}
+body .index-main .main-inner .func .container .func-inner .card-info ul li {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+body .home-main .banner {
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+body .home-main .main-inner {
+  margin-top: 600px;
+  padding: 0 0 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fcdf76), to(#FCFCFC));
+  background: linear-gradient(#fcdf76, #FCFCFC);
+}
+body .home-main .main-inner .fav .container .fav-inner {
+  position: relative;
+  top: -70px;
+  border: none;
+  border-radius: 20px;
+  background-color: #fff;
+  -webkit-box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
+          box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
+  padding: 20px 50px;
+}
+body .home-main .main-inner .fav .container .fav-inner .fav-above {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body .home-main .main-inner .fav .container .fav-inner .fav-above .account-info.balance {
+  text-align: right;
+}
+body .home-main .main-inner .fav .container .fav-inner .fav-above .account-info .account-label {
+  margin: 10px auto;
+  font-size: 20px;
+  font-weight: 600;
+  color: #4F4F4F;
+}
+body .home-main .main-inner .fav .container .fav-inner .fav-above .account-info .account-value {
+  margin: 0px auto 10px;
+  font-size: 27px;
+  font-weight: 600;
+  display: inline-block;
+  margin-right: 10px;
+}
+body .home-main .main-inner .fav .container .fav-inner .fav-above .account-info #eye {
+  cursor: pointer;
+  opacity: 0.8;
+  display: inline-block;
+  font-size: 27px;
+}
+body .home-main .main-inner .fav .container .fav-inner .fav-above .account-info #eye:hover {
+  opacity: 1;
+}
+body .home-main .main-inner .func .container .func-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body .home-main .main-inner .func .container .func-inner .func {
+  width: 30%;
+  color: #000000;
+  text-decoration: none;
+  height: 200px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
+          box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
+  opacity: 0.8;
+  cursor: pointer;
+}
+body .home-main .main-inner .func .container .func-inner .func:hover {
+  opacity: 1;
+}
+body .home-main .main-inner .func .container .func-inner .func .func-inner {
+  height: 200px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .home-main .main-inner .func .container .func-inner .func .func-inner .func-icon {
+  font-size: 50px;
+}
+body .home-main .main-inner .func .container .func-inner .func .func-inner .func-label {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 600;
+}
+body .home-main .main-inner .func .container .func-inner .service {
+  background-color: #fed008;
+}
+body .home-main .main-inner .func .container .func-inner .account {
+  background-color: #fbba08;
+}
+body .home-main .main-inner .func .container .func-inner .transfer {
+  background-color: #f7a616;
+}
+
+body .cardmanager-main {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  padding: 100px 0 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fcdf76), to(#FCFCFC));
+  background: linear-gradient(#fcdf76, #FCFCFC);
+}
+body .cardmanager-main .cardview .container .cardview-func {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+body .cardmanager-main .cardview .container .cardview-func .tablinks {
+  width: 30%;
+  border: none;
+  border-radius: 20px;
+  background-color: #FFA95A;
+  opacity: 0.8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: none;
+  cursor: pointer;
+  height: 200px;
+  -webkit-box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
+          box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
+}
+body .cardmanager-main .cardview .container .cardview-func .tablinks:hover {
+  opacity: 1;
+}
+body .cardmanager-main .cardview .container .cardview-func .tablinks.active {
+  background-color: #FF881A;
+}
+body .cardmanager-main .cardview .container .cardview-func .tablinks .card-icon {
+  font-size: 50px;
+}
+body .cardmanager-main .cardview .container .cardview-func .tablinks .card-type {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 600;
+}
+body .cardmanager-main .cardview .container .cardview-content .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  background: linear-gradient(#929D66 50px, #C5CB82 50px);
+  -webkit-box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
+          box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+body .cardmanager-main .cardview .container .cardview-content .tabcontent .tabcontent-header {
+  padding: 5px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body .cardmanager-main .cardview .container .cardview-content .tabcontent .tabcontent-header .card-type {
+  margin: 0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+body .cardmanager-main .cardview .container .cardview-content .tabcontent .tabcontent-header .register-link {
+  text-decoration: none;
+  font-size: 20px;
+  color: #00FFF0;
+  font-weight: 600;
+  opacity: 0.8;
+}
+body .cardmanager-main .cardview .container .cardview-content .tabcontent .tabcontent-header .register-link:hover {
+  opacity: 1;
+}
+body .cardmanager-main .cardview .container .cardview-content .tabcontent .tabcontent-body {
+  padding: 10px 40px 0;
+}
+body .cardmanager-main .cardview .container .cardview-content .tabcontent .tabcontent-body .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #D6DDC0;
+  margin: 10px auto;
+  border-radius: 10px;
+  padding: 15px 20px;
+}
+body .cardmanager-main .cardview .container .cardview-content .tabcontent .tabcontent-body .card-container .card-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body .cardmanager-main .cardview .container .cardview-content .tabcontent .tabcontent-body .card-container .card-inner .card {
+  height: 100px;
+  margin: 0 10px;
+}
+body .cardmanager-main .cardview .container .cardview-content .tabcontent .tabcontent-body .card-container .card-inner .cardinfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .cardmanager-main .cardview .container .cardview-content .tabcontent .tabcontent-body .card-container .card-inner .cardinfo .cardinfo-text {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+}
+body .cardmanager-main .cardview .container .cardview-content .tabcontent .tabcontent-body .card-container .card-status {
+  color: #289801;
+  margin: auto 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+body .cardmanager-main .cardview .container .cardview-content .tabcontent .tabcontent-body .card-container .card-status.locked {
+  color: #980101;
+}
+body .cardmanager-main .cardview .container .cardview-content .tabcontent .tabcontent-body .card-container .card-link {
+  margin: auto 0;
+}
+body .cardmanager-main .cardview .container .cardview-content .tabcontent .tabcontent-body .card-container .card-link .arrow {
+  font-size: 50px;
+  color: #000;
+}
+body .cardmanager-main .cardview .container .cardview-content .tabcontent .tabcontent-body .card-container .card-link .arrow:hover {
+  font-size: 60px;
+}
+
+body .carddetail-main {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  padding: 100px 0 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fcdf76), to(#FCFCFC));
+  background: linear-gradient(#fcdf76, #FCFCFC);
+}
+body .carddetail-main .func .container .func-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body .carddetail-main .func .container .func-inner .card-info {
+  background-color: #FBDABB;
+  border-radius: 20px;
+  padding: 30px 40px;
+  margin-right: 20px;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+body .carddetail-main .func .container .func-inner .card-info .cardinfo-above {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .carddetail-main .func .container .func-inner .card-info .cardinfo-above .card {
+  height: 200px;
+  margin: 0;
+}
+body .carddetail-main .func .container .func-inner .card-info .cardinfo-above .card-text {
+  margin-left: 30px;
+}
+body .carddetail-main .func .container .func-inner .card-info .cardinfo-above .card-text .card-high {
+  margin: 5px 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+body .carddetail-main .func .container .func-inner .card-info .cardinfo-above .card-text .card-normal {
+  margin: 5px 0;
+  font-size: 18px;
+}
+body .carddetail-main .func .container .func-inner .card-info .cardinfo-below {
+  background-color: #FFC997;
+  border-radius: 20px;
+  padding: 30px;
+  margin-top: 30px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+body .carddetail-main .func .container .func-inner .card-info .cardinfo-below .cardinfo-header {
+  font-weight: 600;
+  margin: 5px 0;
+  font-size: 24px;
+}
+body .carddetail-main .func .container .func-inner .card-info .cardinfo-below .cardinfo-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body .carddetail-main .func .container .func-inner .card-info .cardinfo-below .cardinfo-inner .cardinfo-text {
+  margin: 5px 0;
+  font-size: 20px;
+}
+body .carddetail-main .func .container .func-inner .card-func {
+  background-color: #FFC997;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+body .carddetail-main .func .container .func-inner .card-func .cardfunc-inner {
+  background-color: #FBDABB;
+  font-size: 22px;
+  padding: 10px 40px 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #000;
+  opacity: 1;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+body .carddetail-main .func .container .func-inner .card-func .cardfunc-inner:hover {
+  opacity: 0.8;
+}
+body .carddetail-main .func .container .func-inner .card-func .cardfunc-inner.lock {
+  background-color: #FF7C7C;
+  margin-bottom: 20px;
+}
+
+body .paymentaccount-main {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  padding: 100px 0 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fcdf76), to(#FCFCFC));
+  background: linear-gradient(#fcdf76, #FCFCFC);
+}
+body .paymentaccount-main .func .container .func-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body .paymentaccount-main .func .container .func-inner .payment {
+  background-color: #FBDABB;
+  border-radius: 20px;
+  padding: 30px 40px;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-right: 20px;
+}
+body .paymentaccount-main .func .container .func-inner .payment .payment-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+body .paymentaccount-main .func .container .func-inner .payment .payment-nav .payment-func {
+  background-color: #F7B751;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 30px;
+}
+body .paymentaccount-main .func .container .func-inner .payment .payment-nav .payment-func .tablinks {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #676767;
+  font-size: 22px;
+  padding: 5px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+body .paymentaccount-main .func .container .func-inner .payment .payment-nav .payment-func .tablinks.active {
+  background-color: #FFCC9D;
+  color: #FF0000;
+}
+body .paymentaccount-main .func .container .func-inner .payment .payment-nav .payment-search .paymentsearch-inner {
+  background-color: #FFCC9D;
+  border-radius: 30px;
+  border: 0.5px solid #838383;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .paymentaccount-main .func .container .func-inner .payment .payment-nav .payment-search .paymentsearch-inner .search-button {
+  padding: 10px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 30px;
+  background-color: transparent;
+  border: none;
+}
+body .paymentaccount-main .func .container .func-inner .payment .payment-nav .payment-search .paymentsearch-inner .search-button:hover {
+  background-color: #F7B751;
+}
+body .paymentaccount-main .func .container .func-inner .payment .payment-nav .payment-search .paymentsearch-inner .search-button .search-icon {
+  font-size: 20px;
+}
+body .paymentaccount-main .func .container .func-inner .payment .payment-nav .payment-search .paymentsearch-inner .search-input {
+  font-size: 22px;
+  border-radius: 0 30px 30px 0;
+  outline: none;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: none;
+  max-width: 220px;
+}
+body .paymentaccount-main .func .container .func-inner .payment .payment-line {
+  border: none;
+  background-color: #FF0000;
+  height: 1px;
+}
+body .paymentaccount-main .func .container .func-inner .payment .payment-content .tabcontent .transaction {
+  border: 1px solid #878787;
+  border-color: transparent transparent #878787 transparent;
+  margin: 20px auto;
+  padding: 0 0 20px;
+}
+body .paymentaccount-main .func .container .func-inner .payment .payment-content .tabcontent .transaction p {
+  margin: 5px 0;
+}
+body .paymentaccount-main .func .container .func-inner .payment .payment-content .tabcontent .transaction .transaction-above {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #878787;
+}
+body .paymentaccount-main .func .container .func-inner .payment .payment-content .tabcontent .transaction .transaction-below {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 20px;
+  font-weight: 600;
+}
+body .paymentaccount-main .func .container .func-inner .payment .payment-content .tabcontent.payment-in .transaction-value {
+  color: #0EAF00;
+}
+body .paymentaccount-main .func .container .func-inner .payment .payment-content .tabcontent.payment-out .transaction-value {
+  color: #DB0000;
+}
+body .paymentaccount-main .func .container .func-inner .account {
+  background-color: #FBDABB;
+  border-radius: 20px;
+}
+body .paymentaccount-main .func .container .func-inner .account .account-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: -webkit-gradient(linear, right top, left top, color-stop(44.27%, #FF7A00), to(#FFB46F));
+  background: linear-gradient(270deg, #FF7A00 44.27%, #FFB46F 100%);
+  padding: 30px;
+  border-radius: 20px;
+}
+body .paymentaccount-main .func .container .func-inner .account .account-header .account-text {
+  font-size: 18px;
+  font-weight: 600;
+}
+body .paymentaccount-main .func .container .func-inner .account .account-header .account-icon {
+  font-size: 42px;
+}
+body .paymentaccount-main .func .container .func-inner .account .account-content {
+  padding: 20px 30px;
+}
+body .paymentaccount-main .func .container .func-inner .account .account-content .accountcontent-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body .paymentaccount-main .func .container .func-inner .account .account-content .accountcontent-inner .account-label {
+  font-weight: 400;
+  margin-right: 30px;
+}
+body .paymentaccount-main .func .container .func-inner .account .account-content .accountcontent-inner .account-value {
+  font-weight: 600;
+}
+
+body .logreg-main {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url("../assets/images/logregbg.jpg");
+  background-size: cover;
+}
+body .logreg-main .logo {
+  height: 80px;
+  position: absolute;
+  margin: 0;
+  margin-right: 50px;
+  top: 50px;
+  left: 70%;
+}
+body .logreg-main .container {
+  margin-left: 10% !important;
+}
+body .logreg-main .container .logreg-form {
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  padding: 20px 40px;
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
+          box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
+}
+body .logreg-main .container .logreg-form .logreg-header {
+  font-weight: 600;
+  margin: 10px 0;
+  text-align: center;
+}
+body .logreg-main .container .logreg-form .logreg-input {
+  height: 25px;
+  padding: 5px 10px;
+  margin: 5px 0;
+  border: none;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 218, 124, 0.3)), color-stop(88.02%, #FFDA7C));
+  background: linear-gradient(270deg, rgba(255, 218, 124, 0.3) 0%, #FFDA7C 88.02%);
+  border-radius: 5px;
+  outline: none;
+  opacity: 0.8;
+}
+body .logreg-main .container .logreg-form .logreg-input:focus {
+  opacity: 1;
+}
+body .logreg-main .container .logreg-form .logreg-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 0;
+}
+body .logreg-main .container .logreg-form .logreg-inner .logreg-button {
+  opacity: 0.8;
+  cursor: pointer;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #FC6868;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+}
+body .logreg-main .container .logreg-form .logreg-inner .logreg-button:hover {
+  opacity: 1;
+}
+body .logreg-main .container .logreg-form .logreg-inner .logreg-link {
+  font-style: italic;
+} */

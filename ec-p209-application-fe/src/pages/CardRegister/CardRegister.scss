@@ -1,0 +1,186 @@
+.cardregister-main {
+    .card-info {
+        .container {
+            .cardinfo-inner {
+                background-color: #FFE0AF;
+                border-radius: 20px;
+                padding: 30px 40px;
+                margin-bottom: 30px;
+                box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
+
+                .cardinfo-text {
+                    margin: 0;
+                    font-size: 20px;
+
+                    b {
+                        font-weight: 600;
+                    }
+
+                    &.text-upper {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .card-wrap {
+        margin-bottom: 30px;
+
+        .container {
+            .cardwrap-inner {
+                display: grid;
+                grid-gap: 30px;
+                grid-template-columns: 1fr 2fr;
+
+                .card-type {
+                    background-color: #FFE0AF;
+                    border-radius: 20px;
+                    padding: 30px 40px;
+                    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+
+                    .cardtype-form {
+                        .title {
+                            margin: 5px auto;
+                            font-weight: 600;
+                            font-size: 20px;
+                        }
+
+                        .type-input {
+                            margin-right: 20px;
+                            cursor: pointer;
+                            height: 20px;
+                            width: 20px;
+                            vertical-align: sub;
+
+                            &:focus {
+                                background-color: #000;
+                            }
+                        }
+
+                        .type-label {
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+                
+                .credit-image {
+                    background-color: #FFE0AF;
+                    border-radius: 20px;
+                    padding: 30px 40px;
+                    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+
+                    .file-title {
+                        margin: 0;
+                        font-size: 20px;
+                        font-weight: 600;
+                        margin-bottom: 20px;
+                    }
+
+                    .file-form {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .fileinput-custom {
+                            input[type="file"] {
+                                display: none;
+                            }
+                            display: flex;
+                            justify-content: space-between;
+                            width: 350px;
+                            background-color: #FFCBCB;
+                            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+                            padding: 20px 30px;
+                            border-radius: 20px;
+                            height: fit-content;
+                            cursor: pointer;
+                            p {
+                                
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                margin: 0
+                            }
+                            .left-align{
+                                width: 70%;
+                            }
+                            .right-align{
+                                width: 20%;
+                                text-align: right;
+                            }
+
+                            &:hover {
+                                box-shadow: inset 0px 2px 10px rgba(0, 0, 0, 0.1);
+                            }
+                        }
+
+                        .file-submit {
+                            background: linear-gradient(90deg, #F3DAFF 0%, #9D8DFF 100%);
+                            border: none;
+                            border-radius: 20px;
+                            padding: 10px 40px;
+                            font-size: 20px;
+                            cursor: pointer;
+                            opacity: 0.8;
+                            margin-top: 40px;
+                            width: 200px;
+
+                            &:hover {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+                
+                .card-policy {
+                    background-color: #FFE0AF;
+                    border-radius: 20px;
+                    padding: 30px 40px;
+                    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+                    display: flex;
+                    justify-content: space-between;
+
+                    &.last_item {
+                        grid-column-start: 1;
+                        grid-column-end: 3;
+                    }
+
+                    .cardpolicy-up {
+                        .policy-input {
+                            height: 20px;
+                            width: 20px;
+                            margin-right: 20px;
+                            vertical-align: sub;
+                            border: 3px solid #000;
+                            cursor: pointer;
+                        }
+
+                        .policy-label {
+                            font-size: 18px;
+                        }
+                    }
+
+                    .cardpolicy-down {
+                        align-self: end;
+                        
+                        .policy-button {
+                            background: linear-gradient(90deg, #F3DAFF 0%, #9D8DFF 100%);
+                            border: none;
+                            border-radius: 20px;
+                            padding: 10px 40px;
+                            font-size: 20px;
+                            cursor: pointer;
+                            opacity: 0.8;
+                            width: 200px;
+
+                            &:hover {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

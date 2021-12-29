@@ -1,0 +1,83 @@
+.header {
+  .nav {
+    background-color: #ffc806;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+
+    .container {
+      .nav-inner {
+        padding: 8px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+          height: 40px;
+          margin: 0;
+        }
+
+        .login {
+          border: none;
+          color: #000;
+          text-decoration: none;
+          background: #fff;
+          padding: 10px 20px;
+          font-size: 20px;
+          border-radius: 100px;
+          height: fit-content;
+          cursor: pointer;
+          box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
+          opacity: 0.9;
+
+          &:hover {
+            opacity: 1;
+          }
+
+          .login-icon {
+            font-size: 24px;
+          }
+        }
+
+        .user {
+          display: flex;
+          align-items: center;
+
+          .user-text {
+            margin: 0;
+            font-weight: 600;
+            color: #646464;
+            text-align: right;
+          }
+
+          .user-name {
+            margin: 0;
+            color: #000;
+            text-align: right;
+            font-size: 22px;
+            font-weight: 600;
+            text-transform: uppercase;
+          }
+
+          .user-inner {
+            margin-right: 10px;
+            line-height: 1;
+          }
+
+          .logout-icon {
+            font-size: 45px;
+            color: #ff3d00;
+            opacity: 0.8;
+            cursor: pointer;
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}

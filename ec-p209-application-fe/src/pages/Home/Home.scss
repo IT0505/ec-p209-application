@@ -1,0 +1,126 @@
+.home-main {
+  background: none;
+
+  .banner {
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  .main-inner {
+    margin-top: 600px;
+    padding: 0 0 100px;
+    background: linear-gradient(#fcdf76, #fcfcfc);
+
+    .fav {
+      .container {
+        .fav-inner {
+          position: relative;
+          top: -70px;
+          border: none;
+          border-radius: 20px;
+          background-color: #fff;
+          box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
+          padding: 20px 50px;
+
+          .fav-above {
+            display: flex;
+            justify-content: space-between;
+
+            .account-info {
+              &.balance {
+                text-align: right;
+              }
+
+              .account-label {
+                margin: 10px auto;
+                font-size: 20px;
+                font-weight: 600;
+                color: #4f4f4f;
+              }
+
+              .account-value {
+                margin: 0px auto 10px;
+                font-size: 27px;
+                font-weight: 600;
+                display: inline-block;
+                margin-right: 10px;
+              }
+
+              #eye {
+                cursor: pointer;
+                opacity: 0.8;
+                display: inline-block;
+                font-size: 27px;
+
+                &:hover {
+                  opacity: 1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .func {
+      .container {
+        .func-inner {
+          display: flex;
+          justify-content: space-between;
+
+          .func {
+            width: 30%;
+            color: #000000;
+            text-decoration: none;
+            height: 200px;
+            border: none;
+            outline: none;
+            border-radius: 20px;
+            box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
+            opacity: 0.8;
+            cursor: pointer;
+
+            &:hover {
+              opacity: 1;
+            }
+
+            .func-inner {
+              height: 200px;
+              text-align: center;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+
+              .func-icon {
+                font-size: 50px;
+                margin-bottom: 10px;
+              }
+              .func-label {
+                margin: 0;
+                font-size: 30px;
+                font-weight: 600;
+                line-height: 1;
+              }
+            }
+          }
+
+          .service {
+            background-color: #fed008;
+          }
+
+          .account {
+            background-color: #fbba08;
+          }
+
+          .transfer {
+            background-color: #f7a616;
+          }
+        }
+      }
+    }
+  }
+}
