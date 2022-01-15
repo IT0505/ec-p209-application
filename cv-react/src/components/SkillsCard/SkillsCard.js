@@ -1,20 +1,27 @@
 import './SkillsCard.scss'
 import SectionTitle from '../SectionTitle/SectionTitle'
-function SkillsCard(props) {
-    const progress = props.skillsContents;
+import { skillsData } from '../../utils/DataConfig'
 
-    const progressContents = (progress) => {
-        const items = progress.map((_progress, index) =>
-            <div className="progress" key={index}>
-                <div className="progress-text">
-                    <h6 className="title">{_progress.title}</h6>
-                    <h6 className="title">{_progress.progress}</h6>
-                </div>
-                <div className="progress-bar">
-                    <div className="progress-inner" style={{width: _progress.progress}}></div>
-                </div>
-            </div>
-        )
+function SkillsCard() {
+
+    const progressView = () => {
+        const items = skillsData.map((data, index) =>
+            <div className="content" key={index}>
+                <h3 className="title">{data.title}</h3>
+                {
+                    data.contents.map((content, index1) =>
+                        <div className="progress" key={index1}>
+                            <div className="progress-text">
+                                <h6 className="title">{content.title}</h6>
+                                <h6 className="title">{content.progress}</h6>
+                            </div>
+                            <div className="progress-bar">
+                                <div className="progress-inner" style={{width: content.progress}}></div>
+                            </div>
+                        </div>
+                    )
+                }
+            </div>)
         return items;
     }
     return (
@@ -22,18 +29,7 @@ function SkillsCard(props) {
             <div className="container">
                 <SectionTitle title="skills"/>
                 <div className="skills-inner">
-                    <div className="content">
-                        <h3 className="title">Professional</h3>
-                        {progressContents(progress.professional)}
-                    </div>
-                    <div className="content">
-                        <h3 className="title">Personal</h3>
-                        {progressContents(progress.personal)}
-                    </div>
-                    <div className="content">
-                        <h3 className="title">Software</h3>
-                        {progressContents(progress.software)}
-                    </div>
+                    {progressView()}
                 </div>
             </div>
         </div>

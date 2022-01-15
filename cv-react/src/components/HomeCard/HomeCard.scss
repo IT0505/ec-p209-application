@@ -1,4 +1,4 @@
-@import '../../mixin';
+@import '../../assets/scss/mixin.scss';
 
 .home-card {
     margin: -200px 0 0;
@@ -117,10 +117,10 @@
             }
         }
 
-        .home-avatar {
-            height: auto;
+        .home-avt {
             margin: 0;
             position: relative;
+            display: flex;
 
             .add-button {
                 line-height: 1;
@@ -163,11 +163,10 @@
 
             @include Responsive(M) {
                 width: 125px;
-                height: 125px;
                 margin: 0 auto -20px;
             }
 
-            img {
+            .home-img {
                 @include Responsive(M) {
                     border-radius: 50%;
                 }

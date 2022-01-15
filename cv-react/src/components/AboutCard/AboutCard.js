@@ -1,13 +1,14 @@
 import './AboutCard.scss'
+import { aboutData } from '../../utils/DataConfig'
 
-function AboutCard(props) {
-    const aboutContent = props.aboutContent;
+function AboutCard() {
+
     return (
         <div id="about" className="about-card section">
             <div className="container">
                 <div className="about-inner">
                     <div className="about-above">
-                        {aboutContent.discription}
+                        {aboutData.description}
                     </div>
                     <div className="about-below">
                         <button className="about-button">DOWNLOAD CV</button>
