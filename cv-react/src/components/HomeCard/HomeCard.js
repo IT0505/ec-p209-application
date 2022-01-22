@@ -1,10 +1,9 @@
-import './HomeCard.scss'
-import MyFormat from '../../libs/MyFormat'
+import "./HomeCard.scss";
+import MyFormat from "../../libs/MyFormat";
 
-import { profileInfo } from '../../utils/DataConfig'
+import { profileInfo } from "../../utils/DataConfig";
 
 function HomeCard() {
-
     return (
         <div id="home" className="home-card section">
             <div className="container">
@@ -21,7 +20,9 @@ function HomeCard() {
                                     {profileInfo.email}
                                 </li>
                                 <li className="info-content">
-                                    <i className="material-icons icon">language</i>
+                                    <i className="material-icons icon">
+                                        language
+                                    </i>
                                     {profileInfo.website}
                                 </li>
                                 <li className="info-content">
@@ -33,17 +34,27 @@ function HomeCard() {
                                     {MyFormat.getPhoneNumber(profileInfo.phone)}
                                 </li>
                                 <li className="info-content">
-                                <i className="material-icons icon">place</i>
+                                    <i className="material-icons icon">place</i>
                                     {profileInfo.address}
                                 </li>
                             </ul>
                         </div>
                         <div className="info-link">
-                            <a href="/" className="fa fa-facebook icon"> </a>
-                            <a href="/" className="fa fa-twitter icon"> </a>
-                            <a href="/" className="fa fa-google icon"> </a>
-                            <a href="/" className="fa fa-linkedin icon"> </a>
-                            <a href="/" className="fa fa-rss icon"> </a>
+                            <a href="/" className="fa fa-facebook icon">
+                                {" "}
+                            </a>
+                            <a href="/" className="fa fa-twitter icon">
+                                {" "}
+                            </a>
+                            <a href="/" className="fa fa-google icon">
+                                {" "}
+                            </a>
+                            <a href="/" className="fa fa-linkedin icon">
+                                {" "}
+                            </a>
+                            <a href="/" className="fa fa-rss icon">
+                                {" "}
+                            </a>
                         </div>
                     </div>
                     <figure className="home-avt img">
@@ -51,12 +62,16 @@ function HomeCard() {
                         <span className="add-button">
                             <i className="material-icons icon">add</i>
                         </span>
-                        <img src={profileInfo.avatarUrl} alt="hacker-avt" className="home-img" />
+                        <img
+                            src={profileInfo.avatarUrl}
+                            alt="hacker-avt"
+                            className="home-img"
+                        />
                     </figure>
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default HomeCard;

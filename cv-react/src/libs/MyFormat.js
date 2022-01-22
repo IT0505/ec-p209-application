@@ -1,11 +1,17 @@
 import React from "react";
 
 class MyFormat extends React.Component {
-
     getPhoneNumber = (num) => {
-        let phoneNumber = num.slice(0, 3) + " " + num.slice(3, 6) + " " + num.slice(6, 9) + " " + num.slice(9, 12);
+        let phoneNumber =
+            num.slice(0, 3) +
+            " " +
+            num.slice(3, 6) +
+            " " +
+            num.slice(6, 9) +
+            " " +
+            num.slice(9, 12);
         return phoneNumber;
-    }
+    };
 
     // getDateTime = (data) => {
     //     let date = new Date(data);

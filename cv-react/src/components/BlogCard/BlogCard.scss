@@ -1,3 +1,5 @@
+@import "../../assets/scss/mixin.scss";
+
 .blog-card {
     .blog-inner {
         .blog-content {
@@ -7,6 +9,10 @@
             .content-wrap {
                 display: flex;
 
+                @include Responsive(M) {
+                    flex-direction: column !important;
+                }
+
                 .content-image {
                     margin: 0;
                     width: 50%;
@@ -14,6 +20,10 @@
                     display: flex;
                     position: relative;
                     overflow: hidden;
+
+                    @include Responsive(M) {
+                        width: 100%;
+                    }
 
                     .blog-img {
                         transform: scale(1);
@@ -40,10 +50,9 @@
                                 margin: 0 5px 0 10px;
                             }
                         }
-
                     }
-                    &:hover {
 
+                    &:hover {
                         .blog-img {
                             transform: scale(1.2);
                         }
@@ -60,27 +69,35 @@
                 }
 
                 .content-text {
-                    padding: 40px;
+                    padding: 0 40px;
                     color: #616161;
-                    align-self: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    @include Responsive(M) {
+                        padding: 40px;
+                        align-items: center;
+                    }
 
                     .breadcrumb {
+                        margin: 0;
                         padding: 0;
                         list-style: none;
-    
+
                         .breadcrumb-item {
                             display: inline;
-                            
+
                             // & + &::before {
                             //     padding: 8px;
                             //     color: black;
                             //     content: "/\00a0";
                             // }
-    
+
                             .link {
                                 color: #0275d8;
                                 text-decoration: none;
-    
+
                                 &:hover {
                                     color: #01447e;
                                     text-decoration: underline;
@@ -88,7 +105,7 @@
                             }
                         }
 
-                        .breadcrumb-item+.breadcrumb-item::before {
+                        .breadcrumb-item + .breadcrumb-item::before {
                             padding: 8px;
                             color: black;
                             content: "/\00a0";
@@ -99,11 +116,15 @@
                         text-transform: uppercase;
                         font-size: 24px;
                         font-weight: 400;
-                        margin: 10px auto
+                        margin: 20px 0 0;
                     }
 
                     .content {
                         margin: 10px auto;
+
+                        @include Responsive(M) {
+                            text-align: center;
+                        }
                     }
 
                     .forward {
@@ -119,7 +140,7 @@
 
                 &.odd {
                     flex-direction: row-reverse;
-                    
+
                     .content-text {
                         text-align: right;
                     }
