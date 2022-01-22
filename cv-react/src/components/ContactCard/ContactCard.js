@@ -65,10 +65,6 @@ function ContactCard() {
         });
     };
 
-    useEffect(() => {
-        console.log(input);
-    });
-
     return (
         <div id="contact" className="contact-card section">
             <div className="container">
