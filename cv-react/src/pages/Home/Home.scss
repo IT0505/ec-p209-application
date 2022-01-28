@@ -1,8 +1,14 @@
+@import '../../assets/scss/mixin.scss';
+
 .section {
-    padding: 40px 0;
-    visibility: hidden;
+  padding: 40px 0;
+  visibility: hidden;
+
+  @include Responsive(XS) {
+    padding: 30px 0;
+  }
 }
 
 .animate__animated {
-    visibility: visible;
+  visibility: visible;
 }

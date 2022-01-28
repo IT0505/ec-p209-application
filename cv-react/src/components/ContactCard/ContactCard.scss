@@ -1,106 +1,110 @@
-@import "../../assets/scss/mixin.scss";
+@import '../../assets/scss/mixin.scss';
 
 .contact-card {
-    .contact-inner {
-        .contact-content {
-            display: flex;
-            justify-content: space-between;
+  .contact-inner {
+    .contact-content {
+      display: flex;
+      justify-content: space-between;
 
-            @include Responsive(M) {
-                flex-direction: column;
-            }
+      @include Responsive(M) {
+        flex-direction: column;
+      }
 
-            .contact-form {
-                display: flex;
-                flex-direction: column;
-                padding: 40px;
-                justify-content: center;
-                width: 40%;
-                margin-right: 20px;
-                box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-                background-color: #fff;
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        justify-content: center;
+        width: 40%;
+        margin-right: 20px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        background-color: #fff;
 
-                @include Responsive(M) {
-                    width: -webkit-fill-available;
-                    align-items: center;
-                    margin: 0 0 50px;
-                }
-
-                .input-field {
-                    position: relative;
-                    width: 100%;
-
-                    &.active {
-                        .label {
-                            top: 0;
-                            font-size: 14px;
-                        }
-                    }
-
-                    &:focus-within {
-                        .input {
-                            border-bottom: 2px solid #1976d2;
-                            outline: none;
-                        }
-
-                        .label {
-                            top: 0;
-                            color: #1976d2;
-                            font-size: 14px;
-                        }
-                    }
-
-                    .label {
-                        color: #9e9e9e;
-                        position: absolute;
-                        top: 20px;
-                        transition: 0.5s;
-                        text-transform: capitalize;
-                    }
-                    .input {
-                        border: none;
-                        border-bottom: 1px solid gainsboro;
-                        font-size: 16px;
-                        height: 24px;
-                        margin: 10px 0;
-                        width: 100%;
-                        transition: 0.5s;
-
-                        &.textarea {
-                            height: auto;
-                        }
-                    }
-                }
-
-                .button {
-                    background-color: #06a763;
-                    width: 115px;
-                    color: #fff;
-                    border-radius: 2px;
-                    padding: 7px 15px;
-                    margin-top: 7px;
-                    text-transform: uppercase;
-                    font-size: 16px;
-                    border: none;
-                    opacity: 0.9;
-                    cursor: pointer;
-                    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-                    transition: 0.5s;
-
-                    &:hover {
-                        opacity: 1;
-                        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
-                    }
-                }
-            }
-
-            .google-map {
-                height: auto;
-                width: -webkit-fill-available;
-                @include Responsive(M) {
-                    height: 500px;
-                }
-            }
+        @include Responsive(M) {
+          width: -webkit-fill-available;
+          align-items: center;
+          margin: 0 0 50px;
         }
+
+        @include Responsive(XS) {
+          padding: 30px;
+        }
+
+        .input-field {
+          position: relative;
+          width: 100%;
+
+          &.active {
+            .label {
+              top: 0;
+              font-size: 14px;
+            }
+          }
+
+          &:focus-within {
+            .input {
+              border-bottom: 2px solid #1976d2;
+              outline: none;
+            }
+
+            .label {
+              top: 0;
+              color: #1976d2;
+              font-size: 14px;
+            }
+          }
+
+          .label {
+            color: #9e9e9e;
+            position: absolute;
+            top: 20px;
+            transition: 0.5s;
+            text-transform: capitalize;
+          }
+          .input {
+            border: none;
+            border-bottom: 1px solid gainsboro;
+            font-size: 16px;
+            height: 24px;
+            margin: 10px 0;
+            width: 100%;
+            transition: 0.5s;
+
+            &.textarea {
+              height: auto;
+            }
+          }
+        }
+
+        .button {
+          background-color: #06a763;
+          width: 115px;
+          color: #fff;
+          border-radius: 2px;
+          padding: 7px 15px;
+          margin-top: 7px;
+          text-transform: uppercase;
+          font-size: 16px;
+          border: none;
+          opacity: 0.9;
+          cursor: pointer;
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+          transition: 0.5s;
+
+          &:hover {
+            opacity: 1;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+          }
+        }
+      }
+
+      .google-map {
+        height: auto;
+        width: -webkit-fill-available;
+        @include Responsive(M) {
+          height: 500px;
+        }
+      }
     }
+  }
 }

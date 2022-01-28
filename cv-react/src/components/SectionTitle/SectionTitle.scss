@@ -1,22 +1,28 @@
+@import '../../assets/scss/mixin.scss';
+
 .section-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
 
-    .title-img {
-        height: 50px;
-        padding: 10px;
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2),
-            0 2px 10px 0 rgba(0, 0, 0, 0.1);
-        margin: 0 10px;
-    }
+  @include Responsive(XS) {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
 
-    .title-text {
-        margin: 0;
-        text-transform: uppercase;
-        color: #616161;
-        font-size: 36px;
-        font-weight: 600;
-    }
+  .title-img {
+    height: 50px;
+    padding: 10px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+  }
+
+  .title-text {
+    margin: 0;
+    text-transform: uppercase;
+    color: #616161;
+    font-size: 36px;
+    font-weight: 600;
+  }
 }
