@@ -27,17 +27,14 @@ function Home() {
             // entry.target.classList.remove("section");
             if (entry.target.classList.contains('section')) {
               // entry.target.style.visible="visible";
-              entry.target.classList.add(
-                'animate__animated',
-                'animate__zoomIn'
-              );
+              entry.target.classList.add('animate');
             }
             observer.unobserve(entry.target);
           }
         });
       },
       {
-        threshold: 0.25,
+        threshold: 0.1,
       }
     );
 
