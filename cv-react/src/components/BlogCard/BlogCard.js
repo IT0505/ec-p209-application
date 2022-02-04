@@ -51,7 +51,7 @@ function BlogCard() {
   };
 
   return (
-    <div className='blog-card section' id='blog'>
+    <div id='blog' className='blog-card section'>
       <div className='container'>
         <div className='blog-inner'>
           <SectionTitle title='blog' />

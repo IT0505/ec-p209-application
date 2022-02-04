@@ -4,9 +4,9 @@
   padding: 40px 0;
   visibility: hidden;
   opacity: 0;
-  transform: scale(0.8);
-  transition: 0.8s;
-  position: relative;
+  transform: translateY(100px) scale(0.8);
+  // transition: 0.7s;
+  // position: relative;
   top: 50px;
 
   @include Responsive(XS) {
@@ -15,8 +15,9 @@
 
   &.animate {
     visibility: visible;
+    transform: none;
     opacity: 1;
-    transform: scale(1);
-    top: 0;
+    transition: transform 1.4s cubic-bezier(0.6, 0.2, 0.1, 1) 0s,
+      opacity 1.4s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
   }
 }

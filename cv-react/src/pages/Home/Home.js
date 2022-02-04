@@ -24,9 +24,7 @@ function Home() {
       (entries, observer) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            // entry.target.classList.remove("section");
             if (entry.target.classList.contains('section')) {
-              // entry.target.style.visible="visible";
               entry.target.classList.add('animate');
             }
             observer.unobserve(entry.target);

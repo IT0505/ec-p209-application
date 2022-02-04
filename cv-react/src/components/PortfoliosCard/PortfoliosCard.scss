@@ -41,13 +41,60 @@
     .portfolios-content {
       .tab-content {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        overflow: hidden;
+        grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 10px;
         grid-row-gap: 10px;
         margin-bottom: 10px;
 
-        @include Responsive(S) {
+        &.total-3,
+        &.total-6 {
+          grid-template-columns: repeat(3, 1fr);
+
+          .big {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+
+            @include Responsive(S) {
+              grid-column-start: 1;
+              grid-column-end: 2;
+              grid-row-start: 1;
+              grid-row-end: 2;
+            }
+          }
+        }
+
+        &.total-5 {
+          grid-template-columns: repeat(5, 1fr);
+
+          .big {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 5;
+
+            @include Responsive(S) {
+              grid-column-start: 1;
+              grid-column-end: 2;
+              grid-row-start: 1;
+              grid-row-end: 2;
+            }
+          }
+        }
+
+        &.total-2,
+        &.total-4 {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        &.total-1 {
           grid-template-columns: 1fr;
+        }
+
+        @include Responsive(S) {
+          grid-template-columns: 1fr !important;
         }
 
         .modal {
@@ -65,20 +112,6 @@
           .portfolios-img {
             transform: scale(1);
             transition: 1s;
-          }
-
-          &.big {
-            grid-column-start: 1;
-            grid-column-end: 3;
-            grid-row-start: 1;
-            grid-row-end: 3;
-
-            @include Responsive(S) {
-              grid-column-start: 1;
-              grid-column-end: 2;
-              grid-row-start: 1;
-              grid-row-end: 2;
-            }
           }
 
           .caption {
@@ -123,7 +156,7 @@
               background: rgba(0, 0, 0, 0.7);
               content: '';
               opacity: 0;
-              transition: 1s;
+              transition: 0.5s;
             }
           }
 
@@ -165,6 +198,22 @@
 
         &:hover {
           box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+    .lightbox-wrap {
+      .lightbox {
+        z-index: 999;
+        background-color: rgba(0, 0, 0, 0.4) !important;
+        animation: myMove 1s;
+
+        @keyframes myMove {
+          from {
+            background-color: #fff;
+          }
+          to {
+            background-color: rgba(0, 0, 0, 0.4);
+          }
         }
       }
     }
