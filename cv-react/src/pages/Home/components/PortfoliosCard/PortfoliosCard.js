@@ -30,6 +30,7 @@ function PortfoliosCard() {
               portfoliosData={portfoliosData}
               tab={tab}
               setTab={setTab}
+              viewAll={viewAll}
               lightbox={lightbox}
               setLightbox={setLightbox}
             />
