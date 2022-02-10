@@ -1,0 +1,14 @@
+.lightbox {
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  animation: myMove 1s;
+
+  @keyframes myMove {
+    from {
+      background-color: #fff;
+    }
+    to {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+  }
+}

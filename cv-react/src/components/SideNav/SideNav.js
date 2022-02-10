@@ -12,15 +12,6 @@ function Sidenav() {
       setVisible(true);
     }
   };
-  const linkContents = () => {
-    const items = navLinks.map((navLink, index) => (
-      <a key={index} href={navLink.href} className='nav-item'>
-        <i className={navLink.classIconFA + ' icon'}></i>
-        {navLink.title}
-      </a>
-    ));
-    return items;
-  };
   return (
     <>
       <div
@@ -31,7 +22,12 @@ function Sidenav() {
         <div className='name-holder'>
           <span className='name'>{profileInfo.name.charAt(0)}</span>
         </div>
-        {linkContents()}
+        {navLinks.map((navLink, index) => (
+          <a key={index} href={navLink.href} className='nav-item'>
+            <i className={navLink.classIconFA + ' icon'}></i>
+            {navLink.title}
+          </a>
+        ))}
       </div>
       <div
         className='nav-button'

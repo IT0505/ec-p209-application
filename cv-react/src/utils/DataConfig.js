@@ -383,70 +383,71 @@ export const interestData = {
   ],
 };
 
-export const clientData = [
-  {
-    avt: clientImg1,
-    description: `I work with John on several web development projects and 
+export const testimonialsData = {
+  clientData: [
+    {
+      avt: clientImg1,
+      description: `I work with John on several web development projects and 
                     I find him to be extremely creative and a technical Front End Developer. 
                     Jone expertise involves building complex Responsive Design layouts using HTML 5, CSS3, and JavaScript. 
                     I work with John on several web development projects and I find him to be extremely
                     creative and a technical Front End Developer. Jone expertise involves building complex
                     Responsive Design layouts using HTML 5, CSS3, and JavaScript.`,
-    signature: 'Mike, CEO, IT World',
-  },
-  {
-    avt: clientImg2,
-    description: `I work with John on several web development projects and I find him to be extremely
+      signature: 'Mike, CEO, IT World',
+    },
+    {
+      avt: clientImg2,
+      description: `I work with John on several web development projects and I find him to be extremely
                     creative and a technical Front End Developer.`,
-    signature: 'Mike, CEO, IT World',
-  },
-  {
-    avt: clientImg3,
-    description: `I work with John on several web development projects and I find him to be extremely
+      signature: 'Mike, CEO, IT World',
+    },
+    {
+      avt: clientImg3,
+      description: `I work with John on several web development projects and I find him to be extremely
                     creative and a technical Front End Developer. Jone expertise involves building
                     complex Responsive Design layouts using HTML 5, CSS3, and JavaScript.`,
-    signature: 'Mike, CEO, IT World',
-  },
-];
-
-export const clientLogoData = [
-  {
-    name: 'logo1',
-    src: logoImg1,
-  },
-  {
-    name: 'logo2',
-    src: logoImg2,
-  },
-  {
-    name: 'logo3',
-    src: logoImg3,
-  },
-  {
-    name: 'logo4',
-    src: logoImg4,
-  },
-  {
-    name: 'logo5',
-    src: logoImg5,
-  },
-  {
-    name: 'logo6',
-    src: logoImg6,
-  },
-  {
-    name: 'logo7',
-    src: logoImg7,
-  },
-  {
-    name: 'logo8',
-    src: logoImg8,
-  },
-  {
-    name: 'logo9',
-    src: logoImg9,
-  },
-];
+      signature: 'Mike, CEO, IT World',
+    },
+  ],
+  clientLogoData: [
+    {
+      name: 'logo1',
+      src: logoImg1,
+    },
+    {
+      name: 'logo2',
+      src: logoImg2,
+    },
+    {
+      name: 'logo3',
+      src: logoImg3,
+    },
+    {
+      name: 'logo4',
+      src: logoImg4,
+    },
+    {
+      name: 'logo5',
+      src: logoImg5,
+    },
+    {
+      name: 'logo6',
+      src: logoImg6,
+    },
+    {
+      name: 'logo7',
+      src: logoImg7,
+    },
+    {
+      name: 'logo8',
+      src: logoImg8,
+    },
+    {
+      name: 'logo9',
+      src: logoImg9,
+    },
+  ],
+};
 
 export const blogData = [
   {

@@ -1,0 +1,19 @@
+.autoSlider-wrap {
+  display: flex;
+  // scroll-snap-type: x mandatory;
+  // scroll-behavior: smooth;
+  width: max-content;
+  position: relative;
+  // transition: 2s;
+
+  .client-logo {
+    opacity: 0.8;
+    width: 100px;
+    margin: 10px 25px;
+    flex-shrink: 0;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

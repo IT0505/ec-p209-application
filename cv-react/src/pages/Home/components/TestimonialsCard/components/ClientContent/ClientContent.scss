@@ -1,0 +1,63 @@
+@import '../../../../../../assets/scss/mixin.scss';
+
+.mySwiper {
+  display: flex;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+
+  .swiper-pagination {
+    .swiper-pagination-bullet {
+      border-radius: 0;
+    }
+  }
+
+  .swiper-wrapper {
+    .client-content {
+      color: #fff;
+      padding: 10px 40px 30px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      scroll-snap-align: start;
+      margin: 0;
+      width: -webkit-fill-available !important;
+      flex-shrink: 0;
+
+      @include Responsive(M) {
+        padding: 5px 20px 30px;
+      }
+
+      .client-avt {
+        width: 120px;
+        display: flex;
+        margin: 0;
+
+        .client-img {
+          border-radius: 50%;
+        }
+      }
+
+      .client-description {
+        text-align: center;
+
+        @include Responsive(M) {
+          margin: 10px 0;
+        }
+
+        &::before {
+          content: '\201C';
+          font-family: Georgia, serif;
+          font-weight: bold;
+          color: #1976d2;
+          font-size: 2em;
+          line-height: 0.1em;
+          margin-right: 0;
+          vertical-align: -0.3em;
+        }
+      }
+    }
+  }
+}

@@ -1,19 +1,20 @@
 import { useEffect, useState } from 'react';
 import './Home.scss';
-import Header from '../../components/Header/Header';
-import HomeCard from '../../components/HomeCard/HomeCard';
-import SideNav from '../../components/SideNav/SideNav';
-import AboutCard from '../../components/AboutCard/AboutCard';
-import EducationCard from '../../components/EducationCard/EducationCard';
-import SkillsCard from '../../components/SkillsCard/SkillsCard';
-import ExperienceCard from '../../components/ExperienceCard/ExperienceCard';
-import PortfoliosCard from '../../components/PortfoliosCard/PortfoliosCard';
-import InterestCard from '../../components/InterestCard/InterestCard';
-import TestimonialsCard from '../../components/TestimonialsCard/TestimonialsCard';
-import BlogCard from '../../components/BlogCard/BlogCard';
-import ContactCard from '../../components/ContactCard/ContactCard';
+import HomeCard from './components/HomeCard/HomeCard';
+import AboutCard from './components/AboutCard/AboutCard';
+import EducationCard from './components/EducationCard/EducationCard';
+import SkillsCard from './components/SkillsCard/SkillsCard';
+import ExperienceCard from './components/ExperienceCard/ExperienceCard';
+import PortfoliosCard from './components/PortfoliosCard/PortfoliosCard';
+import InterestCard from './components/InterestCard/InterestCard';
+import TestimonialsCard from './components/TestimonialsCard/TestimonialsCard';
+import BlogCard from './components/BlogCard/BlogCard';
+import ContactCard from './components/ContactCard/ContactCard';
+
 import ScrollUpButton from '../../components/ScrollUpButton/ScrollUpButton';
 import Loader from '../../components/Loader/Loader';
+import SideNav from '../../components/SideNav/SideNav';
+import Header from '../../components/Header/Header';
 
 function Home() {
   const [topCheck, setTopCheck] = useState(false);
@@ -54,7 +55,7 @@ function Home() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 2000);
   }, []);
 
   return loading ? (

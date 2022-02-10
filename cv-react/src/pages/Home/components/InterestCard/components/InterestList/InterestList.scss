@@ -1,0 +1,33 @@
+@import '../../../../../../assets/scss/mixin.scss';
+
+.interest-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  overflow: hidden;
+
+  @include Responsive(M) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include Responsive(XS) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .content {
+    background-color: #06a763;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 16px;
+
+    .icon {
+      font-size: 24px;
+    }
+
+    &.green {
+      background-color: #fff;
+      color: #06a763;
+    }
+  }
+}

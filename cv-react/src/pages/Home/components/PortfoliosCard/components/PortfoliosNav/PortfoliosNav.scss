@@ -1,0 +1,35 @@
+.portfolios-nav {
+  // display: flex;
+  // justify-content: center;
+  margin: 0 auto 30px;
+  text-align: center;
+
+  .tabLink {
+    background: transparent;
+    background-position: center;
+    transition: background 1s;
+    border: none;
+    padding: 10px 15px;
+    color: #555555;
+    cursor: pointer;
+    font-size: 16px;
+    margin: auto 2px;
+    text-transform: uppercase;
+
+    &:hover {
+      background: #eee radial-gradient(circle, transparent 1%, #eee 1%)
+        center/15000%;
+    }
+
+    &.active {
+      line-height: 1.4;
+      border-bottom: 5px solid #1976d2;
+    }
+
+    &:active {
+      background-color: #ccc;
+      background-size: 100%;
+      transition: background 0s;
+    }
+  }
+}

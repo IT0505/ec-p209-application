@@ -1,0 +1,33 @@
+@import '../../../../assets/scss/mixin.scss';
+.testimonials-card {
+  .testimonials-inner {
+    .client-info {
+      background-color: #06a763;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+      margin-bottom: 10px;
+    }
+
+    .client-list {
+      background-color: #fff;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+      overflow-x: hidden;
+      position: relative;
+      padding: 10px 0;
+
+      // .mySwiper {
+      //   .swiper-wrapper {
+      //     transition: 2s all !important;
+
+      //     .client-logo {
+      //       opacity: 0.6;
+      //       transition: 1s;
+
+      //       &:hover {
+      //         opacity: 1;
+      //       }
+      //     }
+      //   }
+      // }
+    }
+  }
+}
